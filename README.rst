@@ -1,5 +1,5 @@
-Requests: HTTP for Humans
-=========================
+Requests: Човешки HTTP
+======================
 
 
 .. image:: https://travis-ci.org/kennethreitz/requests.png?branch=master
@@ -8,16 +8,15 @@ Requests: HTTP for Humans
 .. image:: https://pypip.in/d/requests/badge.png
         :target: https://crate.io/packages/requests/
 
-Requests is an Apache2 Licensed HTTP library, written in Python, for human
-beings.
+Requests е човешка HTTP библиотека под Apache2 лиценз, написана на
+Python.
 
-Most existing Python modules for sending HTTP requests are extremely
-verbose and cumbersome. Python's builtin urllib2 module provides most of
-the HTTP capabilities you should need, but the api is thoroughly broken.
-It requires an enormous amount of work (even method overrides) to
-perform the simplest of tasks.
+Повечето съществуващти Python модули за изпращане на HTTP заявки са
+доста тромави и многословни. Вградената библиотека urllib2 в Python
+предоставя повечето от HTTP възможностите, които Ви трябват. За
+съжеление, API-то изисква нечовешки усилия и за най-лесните задачи.
 
-Things shouldn't be this way. Not in Python.
+Нещата не трябва да седят по този начин. Не и в Python.
 
 .. code-block:: pycon
 
@@ -29,62 +28,59 @@ Things shouldn't be this way. Not in Python.
     >>> r.text
     ...
 
-See `the same code, without Requests <https://gist.github.com/973705>`_.
+Вижте `същият код, без Requests <https://gist.github.com/973705>`_.
 
-Requests allow you to send HTTP/1.1 requests. You can add headers, form data,
-multipart files, and parameters with simple Python dictionaries, and access the
-response data in the same way. It's powered by httplib and `urllib3
-<https://github.com/shazow/urllib3>`_, but it does all the hard work and crazy
-hacks for you.
+Requests Ви позволява да изпращате HTTP/1.1 заявки. Може да добавяте
+заглавия (headers), данни за форми (form data), съставни файлове
+(multipart files) и параметри чрез прости Python речници. Requests е
+задвижена от httplib и `urllib3 <https://github.com/shazow/urllib3>`_, но
+износва цялата работа около тях, за да не Ви се налага да я правите.
 
+Характеристики
+--------------
 
-Features
---------
-
-- International Domains and URLs
+- Международни домейни и URL адреси
 - Keep-Alive & Connection Pooling
-- Sessions with Cookie Persistence
-- Browser-style SSL Verification
-- Basic/Digest Authentication
-- Elegant Key/Value Cookies
-- Automatic Decompression
-- Unicode Response Bodies
-- Multipart File Uploads
+- Сесии със Устойчивост на Бизквитките
+- SSL Верификация
+- Basic/Digest Аутентикация
+- Елегантни Ключ/Стойност Бизквитки
+- Автоматична Декомпресия
+- Unicode Отговори
+- Качване на Съставни Файлове
 - Connection Timeouts
 - Thread-safety
 
+Инсталация
+----------
 
-Installation
-------------
-
-To install requests, simply:
+За да инстаирате Requests, изпълнете:
 
 .. code-block:: bash
 
     $ pip install requests
 
-Or, if you absolutely must:
+В краен случай:
 
 .. code-block:: bash
 
     $ easy_install requests
 
-But, you really shouldn't do that.
+Но, наистина, не бихте искали да използвате `easy_install`.
 
+Документация
+------------
 
-Documentation
--------------
+Документацията е достъпна на следният адрес:
+http://docs.python-requests.org/.
 
-Documentation is available at http://docs.python-requests.org/.
+Допринасяне
+-----------
 
+#. Проверете за съществуващи дискусии за проблеми или създайте нова таква, ако имате проблем или идея за подобрение. Съществува Contributor Friendly бележка за съществуващи проблеми, които са подходящи за новобранци.
+#. Клонирайте `хранилището`_ в GitHub и направете промените си срещу **master** клона (или създайте нов такъв, от него).
+#. Напишете тестове, които показват проблема, който сте оправили или функционалността, която сте добавили.
+#. Изпратате промените като Pull Request в GitHub и добавете себе си като `Автор`_.
 
-Contribute
-----------
-
-#. Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug. There is a Contributor Friendly tag for issues that should be ideal for people who are not very familiar with the codebase yet.
-#. Fork `the repository`_ on Github to start making your changes to the **master** branch (or branch off of it).
-#. Write a test which shows that the bug was fixed or that the feature works as expected.
-#. Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to AUTHORS_.
-
-.. _`the repository`: http://github.com/kennethreitz/requests
-.. _AUTHORS: https://github.com/kennethreitz/requests/blob/master/AUTHORS.rst
+.. _`хранилище`: http://github.com/kennethreitz/requests
+.. _`Автор`: https://github.com/kennethreitz/requests/blob/master/AUTHORS.rst
