@@ -81,5 +81,5 @@ http://docs.python-requests.org/.
 #. Напишете тестове, които показват проблема, който сте оправили или функционалността, която сте добавили.
 #. Изпратате промените като Pull Request в GitHub и добавете себе си като `Автор`_.
 
-.. _`хранилище`: http://github.com/kennethreitz/requests
+.. _`хранилището`: http://github.com/kennethreitz/requests
 .. _`Автор`: https://github.com/kennethreitz/requests/blob/master/AUTHORS.rst
